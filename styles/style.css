@@ -9,6 +9,31 @@ html {
   font-size: 62.5%;
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  src: url("/fonts/Montserrat/Montserrat-Medium.ttf");
+}
+
+@font-face {
+  font-family: 'Montserrat Bold';
+  src: url("/fonts/Montserrat/Montserrat-Bold.ttf");
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url("/fonts/dinpro-cufonfonts/DINPro-Medium tr.ttf");
+}
+
+@font-face {
+  font-family: 'DIN Pro Bold';
+  src: url("/fonts/dinpro-cufonfonts/DINPro-Bold tr.ttf");
+}
+
+@font-face {
+  font-family: 'SF Pro Rounded';
+  src: url("/fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf");
+}
+
 li,
 button,
 a,
@@ -16,26 +41,32 @@ p,
 input,
 label {
   font-size: 2.5rem;
+  font-family: 'SF Pro Rounded', sans-serif;
 }
 
 h1 {
   font-size: 2.5rem;
+  font-family: 'Montserrat Bold', sans-serif;
 }
 
 h2 {
   font-size: 4rem;
+  font-family: 'Montserrat Bold', sans-serif;
 }
 
 h3 {
   font-size: 2rem;
+  font-family: 'DIN Pro Bold', sans-serif;
 }
 
 h4 {
   font-size: 1.5rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 h5 {
   font-size: 1.2rem;
+  font-family: 'Montserrat', sans-serif;
 }
 
 ul {
@@ -45,5 +76,229 @@ ul {
 a {
   text-decoration: none;
   color: #2c2c2c;
+}
+
+.btn-cta {
+  padding: 2rem 4rem;
+  background: #21deba;
+  color: white;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 20px 40px rgba(33, 222, 186, 0.4);
+          box-shadow: 0 20px 40px rgba(33, 222, 186, 0.4);
+  -webkit-animation: button 0.8s ease-in-out infinite alternate 2s;
+          animation: button 0.8s ease-in-out infinite alternate 2s;
+}
+
+.btn-cta:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+  -webkit-box-shadow: 0 20px 60px rgba(33, 222, 186, 0.6);
+          box-shadow: 0 20px 60px rgba(33, 222, 186, 0.6);
+}
+
+@-webkit-keyframes button {
+  from {
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  to {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+}
+
+@keyframes button {
+  from {
+    -webkit-transform: rotateZ(-1deg);
+            transform: rotateZ(-1deg);
+  }
+  to {
+    -webkit-transform: rotateZ(1deg);
+            transform: rotateZ(1deg);
+  }
+}
+
+.main-head {
+  margin: 0 0 0 auto;
+  -webkit-box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  min-height: 8vh;
+  font-size: 50%;
+  width: 95%;
+}
+
+.logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 10rem;
+          flex: 1 1 10rem;
+  margin-left: 2rem;
+}
+
+.logo .logo-image {
+  width: 6rem;
+}
+
+.logo .logo-text {
+  font-family: 'Montserrat', sans-serif;
+  color: #2c2c2c;
+  margin: 2rem;
+}
+
+.nav-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 20rem;
+          flex: 1 1 20rem;
+  font-weight: 600;
+  color: #2c2c2c;
+}
+
+.nav-links a {
+  font-size: 2rem;
+}
+
+#nav-btn-cta {
+  padding: 1.2rem 2.4rem;
+  background: #21deba;
+  color: #ffffff;
+  -webkit-box-shadow: 0 20px 40px rgba(33, 222, 186, 0.4);
+          box-shadow: 0 20px 40px rgba(33, 222, 186, 0.4);
+}
+
+#nav-btn-cta a {
+  color: white;
+  font-size: 1.8rem;
+}
+
+#nav-btn-cta:hover {
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.hero {
+  min-height: 30vh;
+  width: 90%;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.hero-wrapper .hero-text {
+  -webkit-box-flex: 3;
+      -ms-flex: 3 1 10rem;
+          flex: 3 1 10rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.hero-wrapper .hero-image {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-flex: 2;
+      -ms-flex: 2 1 10rem;
+          flex: 2 1 10rem;
+}
+
+.hero-wrapper .hero-image svg {
+  width: 80%;
+}
+
+.hero-wrapper h2 {
+  font-size: 5.5rem;
+  margin-bottom: 2rem;
+}
+
+.hero-wrapper h3 {
+  font-size: 3.4rem;
+  margin-bottom: 4rem;
+  color: #2c2c2c;
+  font-weight: 500;
+}
+
+.hero-wrapper a {
+  font-size: 2rem;
+  font-weight: 900;
 }
 /*# sourceMappingURL=style.css.map */

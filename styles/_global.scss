@@ -8,6 +8,27 @@ html {
 	font-size: 62.5%;
 }
 
+@font-face {
+	font-family: 'Montserrat';
+	src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+}
+@font-face {
+	font-family: 'Montserrat Bold';
+	src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
+}
+@font-face {
+	font-family: 'DIN Pro';
+	src: url('/fonts/dinpro-cufonfonts/DINPro-Medium\ tr.ttf');
+}
+@font-face {
+	font-family: 'DIN Pro Bold';
+	src: url('/fonts/dinpro-cufonfonts/DINPro-Bold\ tr.ttf');
+}
+@font-face {
+	font-family: 'SF Pro Rounded';
+	src: url('/fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf');
+}
+
 li,
 button,
 a,
@@ -15,22 +36,28 @@ p,
 input,
 label {
 	font-size: $text;
+	font-family: 'SF Pro Rounded', sans-serif;
 }
 
 h1 {
 	font-size: $header1;
+	font-family: 'Montserrat Bold', sans-serif;
 }
 h2 {
 	font-size: $header2;
+	font-family: 'Montserrat Bold', sans-serif;
 }
 h3 {
 	font-size: $header3;
+	font-family: 'DIN Pro Bold', sans-serif;
 }
 h4 {
 	font-size: $header4;
+	font-family: 'Montserrat', sans-serif;
 }
 h5 {
 	font-size: $header5;
+	font-family: 'Montserrat', sans-serif;
 }
 ul {
 	list-style: none;
@@ -38,4 +65,27 @@ ul {
 a {
 	text-decoration: none;
 	color: $grey-text;
+}
+
+.btn-cta {
+	padding: 2rem 4rem;
+	background: $color;
+	color: white;
+	border-radius: 1rem;
+	box-shadow: 0 20px 40px rgba($color: #21deba, $alpha: 0.4);
+	animation: button 0.8s ease-in-out infinite alternate 2s;
+}
+
+.btn-cta:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 20px 60px rgba($color: #21deba, $alpha: 0.6);
+}
+
+@keyframes button {
+	from {
+		transform: rotateZ(-1deg);
+	}
+	to {
+		transform: rotateZ(1deg);
+	}
 }

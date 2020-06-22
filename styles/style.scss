@@ -5,6 +5,16 @@ $header4: 1.5rem;
 $header5: 1.2rem;
 $text: 2.5rem;
 $grey-text: #2c2c2c;
+$color: #21deba;
+
+@mixin flex($justify, $align, $direction) {
+	display: flex;
+	justify-content: $justify;
+	align-items: $align;
+	flex-direction: $direction;
+}
 
 @import 'global';
 @import 'intro';
+
+// @media

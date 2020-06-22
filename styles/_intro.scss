@@ -1,1 +1,89 @@
+.main-head {
+	margin: 0 0 0 auto;
+	box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.1);
+}
 
+nav {
+	@include flex(space-between, center, row);
+	min-height: 8vh;
+	font-size: 50%;
+	width: 95%;
+}
+
+.logo {
+	@include flex(flex-start, center, row);
+	flex: 1 1 10rem;
+	.logo-image {
+		width: 6rem;
+	}
+	.logo-text {
+		font-family: 'Montserrat', sans-serif;
+		color: $grey-text;
+		margin: 2rem;
+	}
+	margin-left: 2rem;
+}
+
+.nav-links {
+	@include flex(space-around, center, row);
+	flex: 1 1 20rem;
+	font-weight: 600;
+	color: $grey-text;
+	a {
+		font-size: 2rem;
+	}
+}
+
+#nav-btn-cta {
+	padding: 1.2rem 2.4rem;
+	background: $color;
+	color: #ffffff;
+	box-shadow: 0 20px 40px rgba($color: #21deba, $alpha: 0.4);
+	a {
+		color: white;
+		font-size: 1.8rem;
+	}
+}
+
+#nav-btn-cta:hover {
+	transform: translateY(-2px);
+}
+
+// HERO SECITON
+
+.hero {
+	min-height: 30vh;
+	width: 90%;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+.hero-wrapper {
+	@include flex(space-evenly, center, row);
+	flex-wrap: wrap;
+	.hero-text {
+		flex: 3 1 10rem;
+		@include flex(space-around, flex-start, column);
+	}
+	.hero-image {
+		@include flex(center, center, row);
+		flex: 2 1 10rem;
+		svg {
+			width: 80%;
+		}
+	}
+	h2 {
+		font-size: 5.5rem;
+		margin-bottom: 2rem;
+	}
+	h3 {
+		font-size: 3.4rem;
+		margin-bottom: 4rem;
+		color: $grey-text;
+		font-weight: 500;
+	}
+	a {
+		font-size: 2rem;
+		font-weight: 900;
+	}
+}
