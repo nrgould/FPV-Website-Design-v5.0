@@ -37,6 +37,7 @@ input,
 label {
 	font-size: $text;
 	font-family: 'SF Pro Rounded', sans-serif;
+	line-height: 3.2rem;
 }
 
 h1 {
@@ -74,18 +75,38 @@ a {
 	border-radius: 1rem;
 	box-shadow: 0 20px 40px rgba($color: #21deba, $alpha: 0.4);
 	animation: button 0.8s ease-in-out infinite alternate 2s;
-}
-
-.btn-cta:hover {
-	transform: translateY(-2px);
-	box-shadow: 0 20px 60px rgba($color: #21deba, $alpha: 0.6);
-}
-
-@keyframes button {
-	from {
-		transform: rotateZ(-1deg);
+	font-weight: 600;
+	&:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 20px 60px rgba($color: #21deba, $alpha: 0.4),
+			0px 20px 40px rgba($color: $color, $alpha: 0.4);
 	}
-	to {
-		transform: rotateZ(1deg);
+}
+
+.btn-cta-2 {
+	padding: 1.5rem 3rem;
+	background: $color;
+	color: white;
+	border-radius: 1rem;
+	box-shadow: 0 20px 40px rgba($color: #21deba, $alpha: 0.4);
+	animation: button 0.8s ease-in-out infinite alternate 2s;
+	font-weight: 600;
+	&:hover {
+		transform: translateY(-1px);
+		box-shadow: 0 20px 60px rgba($color: #21deba, $alpha: 0.4),
+			0px 20px 40px rgba($color: $color, $alpha: 0.4);
+	}
+}
+
+.btn-border {
+	padding: 1.8rem 3rem;
+	background: none;
+	color: $color;
+	border: 2px solid $color;
+	font-size: 1.5rem;
+	&:hover {
+		box-shadow: 0 20px 40px rgba($color: #21deba, $alpha: 0.2);
+		background: $color;
+		color: white;
 	}
 }
