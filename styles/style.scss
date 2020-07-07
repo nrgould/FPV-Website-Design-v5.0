@@ -15,6 +15,13 @@ $bg-color: #101c2e;
 	flex-direction: $direction;
 }
 
+@mixin expand() {
+	transition: all 200ms;
+	&:hover {
+		transform: scale(1.025);
+	}
+}
+
 @import 'global';
 @import 'intro';
 @import 'body';

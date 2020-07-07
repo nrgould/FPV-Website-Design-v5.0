@@ -15,8 +15,7 @@ nav {
 	flex: 1 1 20rem;
 	.logo-image {
 		width: 6rem;
-		&:hover {
-		}
+		@include expand();
 	}
 	.logo-text {
 		font-family: 'Montserrat', sans-serif;
@@ -54,7 +53,7 @@ nav {
 	transition: all 0.1s ease;
 	&:hover {
 		font-size: 2rem;
-		transform: scale(1.1);
+		@include expand();
 		box-shadow: 0 10px 10px rgba($color: #21deba, $alpha: 0.4);
 	}
 }

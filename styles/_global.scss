@@ -73,15 +73,10 @@ a {
 	background: $color;
 	color: white;
 	border-radius: 1rem;
-	box-shadow: 0 20px 40px rgba($color: #21deba, $alpha: 0.4);
+	box-shadow: 0 10px 20px rgba($color: #21deba, $alpha: 0.4);
 	animation: button 0.8s ease-in-out infinite alternate 2s;
 	font-weight: 600;
-	transition: 0.2s ease;
-	&:hover {
-		transform: scale(1.1);
-		box-shadow: 0 20px 60px rgba($color: #21deba, $alpha: 0.4),
-			0px 20px 40px rgba($color: $color, $alpha: 0.4);
-	}
+	@include expand();
 }
 
 .btn-cta-2 {
@@ -92,12 +87,7 @@ a {
 	box-shadow: 0 20px 40px rgba($color: #21deba, $alpha: 0.4);
 	animation: button 0.8s ease-in-out infinite alternate 2s;
 	font-weight: 600;
-	transition: 0.3s ease-in-out;
-	&:hover {
-		transform: scale(1.2);
-		box-shadow: 0 20px 60px rgba($color: #21deba, $alpha: 0.4),
-			0px 20px 40px rgba($color: $color, $alpha: 0.4);
-	}
+	@include expand();
 }
 
 .btn-border {
