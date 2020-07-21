@@ -1,0 +1,388 @@
+// BENEFITS SECTION
+
+.benefits {
+	position: relative;
+	margin-top: 10rem;
+	p {
+		font-size: 2rem;
+		line-height: 3.2rem;
+	}
+	h3 {
+		margin-bottom: 2rem;
+	}
+	h2 {
+		width: 90%;
+		margin: auto;
+	}
+}
+
+.benefit-wrapper {
+	width: 80%;
+	margin: auto;
+}
+
+.benefit-1 {
+	@include flex(space-around, center, row);
+	flex-wrap: wrap;
+	margin-bottom: 8rem;
+}
+.benefit-1-text {
+	flex: 1 1 40rem;
+	@include flex(center, flex-start, column);
+}
+
+.benefit-1-image {
+	flex: 1 1 40rem;
+	svg {
+		width: 60%;
+	}
+	text-align: center;
+	@include expand();
+}
+
+.benefit-2 {
+	@include flex(space-around, center, row);
+	flex-wrap: wrap;
+	margin-bottom: 8rem;
+}
+.benefit-2-text {
+	flex: 1 1 40rem;
+	@include flex(center, flex-start, column);
+}
+.benefit-2-image {
+	flex: 1 1 40rem;
+	svg {
+		width: 70%;
+	}
+	text-align: left;
+	@include expand();
+}
+
+.benefit-3 {
+	@include flex(space-around, center, row);
+	flex-wrap: wrap;
+	margin-bottom: 8rem;
+}
+.benefit-3-text {
+	flex: 1 1 40rem;
+	@include flex(center, flex-start, column);
+}
+
+.benefit-3-image {
+	flex: 1 1 40rem;
+	svg {
+		width: 70%;
+	}
+	text-align: center;
+	@include expand();
+}
+
+// CTA SECTION
+
+.cta-1 {
+	@include flex(center, center, row);
+	h3 {
+		margin-right: 4rem;
+	}
+	margin-top: 10rem;
+}
+
+.fade-in {
+	opacity: 10;
+}
+
+@keyframes cta-1 {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 100;
+	}
+}
+
+// SERVICES CARDS
+
+.services {
+	margin: auto;
+	position: relative;
+	margin-top: 20rem;
+	width: 80%;
+	h3 {
+		margin-bottom: 8rem;
+	}
+}
+
+.cards-wrapper {
+	@include flex(space-around, space-evenly, row);
+	flex-wrap: wrap;
+	z-index: 1;
+	line-height: 3.2rem;
+	p,
+	li {
+		font-weight: 500;
+	}
+}
+.card-fb {
+	@include flex(center, center, column);
+	width: 40rem;
+	padding: 6rem 4.4rem;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #dbdbdb;
+	background: white;
+	img {
+		width: 7rem;
+		margin-bottom: 4rem;
+	}
+	p,
+	li {
+		margin: 3.8rem 2rem;
+		list-style-type: disc;
+		text-align: left;
+	}
+	margin-bottom: 8rem;
+	@include shadow();
+	@include expand();
+}
+.card-google {
+	@include flex(center, center, column);
+	width: 40rem;
+	padding: 6rem 4.4rem;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #dbdbdb;
+	background: white;
+	img {
+		width: 7rem;
+		margin-bottom: 4rem;
+	}
+	p,
+	li {
+		margin: 3.8rem 2rem;
+		list-style-type: disc;
+		text-align: left;
+	}
+	margin-bottom: 8rem;
+	@include shadow();
+	@include expand();
+}
+.card-cro {
+	@include flex(center, center, column);
+	width: 40rem;
+	padding: 6rem 4.4rem;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #dbdbdb;
+	background: white;
+	img {
+		width: 9rem;
+		margin-bottom: 2.5rem;
+	}
+	p,
+	li {
+		margin: 3.8rem 2rem;
+		list-style-type: disc;
+		text-align: left;
+	}
+	margin-bottom: 8rem;
+	@include shadow();
+	@include expand();
+}
+
+// CASE STUDY SECTION
+
+.case-study {
+	// background: url('../img/pattern6invert.png');
+	margin: auto;
+	position: relative;
+	margin-top: 10rem;
+	width: 80%;
+	h3,
+	p,
+	li {
+		margin-bottom: 2rem;
+	}
+}
+
+.case-study-wrapper {
+	@include flex(space-evenly, center, row);
+	flex-wrap: wrap;
+}
+
+.values-container {
+	@include flex(center, center, row);
+	@include shadow();
+	flex: 1 1 20rem;
+	margin: 2rem 4rem;
+	padding: 6rem;
+	height: 50vh;
+	border-radius: 6px;
+	border: 1px solid #dbdbdb;
+	.values-image {
+		flex: 1 1 20rem;
+	}
+	img {
+		width: 75%;
+		height: auto;
+	}
+	.values-text {
+		flex: 2 1 20rem;
+	}
+	p {
+		margin-bottom: 3rem;
+	}
+	background: white;
+}
+.case-study-image {
+	flex: 1 1 20rem;
+	@include flex(center, center, row);
+	img {
+		height: 50vh;
+		border-radius: 6px;
+	}
+}
+
+.case-study-container {
+	@include flex(center, center, column);
+	@include shadow();
+	flex: 1 1 20rem;
+	margin: 2rem 4rem;
+	padding: 6rem 4.4rem;
+	height: 50vh;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #dbdbdb;
+	img,
+	li,
+	h4,
+	a {
+		margin-bottom: 2rem;
+		list-style-type: disc;
+	}
+	background: white;
+}
+
+//MARKETING PROCESS CARDS
+
+.marketing-process {
+	overflow: hidden;
+	position: relative;
+	margin: 20rem 0 5rem 0;
+	h3 {
+		margin: 0 10% 5rem 10%;
+	}
+	z-index: 10;
+}
+
+.marketing-process-wrapper {
+	margin: auto;
+	width: 80%;
+}
+
+.top-row {
+	@include flex(space-evenly, space-evenly, row);
+	flex-wrap: wrap;
+}
+
+.bottom-row {
+	@include flex(space-evenly, space-evenly, row);
+	flex-wrap: wrap;
+}
+
+.process-card {
+	@include flex(center, center, column);
+	background: white;
+	width: 40rem;
+	padding: 5.4rem 4rem;
+	text-align: center;
+	border-radius: 6px;
+	border: 1px solid #dbdbdb;
+	@include shadow();
+	margin-bottom: 8rem;
+	img {
+		width: 12rem;
+		margin-bottom: 2rem;
+	}
+	h4,
+	a {
+		margin: 2rem 2rem;
+		list-style-type: disc;
+		text-align: center;
+	}
+	@include expand();
+}
+
+#Component_3_1 {
+	position: absolute;
+	top: 20%;
+	left: -70%;
+	z-index: -10;
+	animation: pulsing-circle 3s ease-in-out infinite alternate;
+}
+
+#Component_2_1 {
+	position: absolute;
+	top: 0;
+	right: -60%;
+	z-index: -10;
+	animation: pulsing-circle 3s ease-in-out infinite alternate 2s;
+}
+
+@keyframes pulsing-circle {
+	from {
+		transform: translateX(-50px);
+	}
+	to {
+		transform: translateX(30px);
+	}
+}
+
+// BLOG SECTION
+
+.home-blog {
+	margin: 20rem 0 5rem 0;
+	h3 {
+		margin: 0 10% 5rem 10%;
+	}
+}
+
+.home-blog-wrapper {
+	width: 90%;
+	margin: auto;
+	@include flex(space-around, center, row);
+	flex-wrap: wrap;
+}
+
+.home-blog-card {
+	margin: 2rem 6rem;
+	text-align: center;
+	h4 {
+		font-size: 2rem;
+	}
+	img {
+		width: 40rem;
+		margin-bottom: 1rem;
+		border-radius: 6px;
+		transition: 0.2s ease-in-out;
+		&:hover {
+			opacity: 0.7;
+			@include expand();
+		}
+	}
+}
+
+// BOTTOM CTA
+
+.bottom-cta {
+	background: url('../img/bottom-cta-bg.png');
+	background-repeat: none;
+	background-size: cover;
+	@include flex(space-around, center, row);
+	flex-wrap: wrap;
+	padding: 4rem 6rem;
+}
+
+.ml3 {
+	font-weight: 900;
+	font-size: 3.5em;
+}

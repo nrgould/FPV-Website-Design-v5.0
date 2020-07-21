@@ -1,0 +1,40 @@
+footer {
+	padding-top: 6rem;
+	background: rgba($color: #101c2e, $alpha: 1);
+	h4 {
+		color: white;
+	}
+}
+
+.footer-wrapper {
+	width: 90%;
+	margin: auto;
+	@include flex(space-around, space-evenly, row);
+}
+.logo-social {
+	flex: 1 1 40rem;
+	@include flex(center, space-evenly, column);
+}
+
+.footer-logo {
+	margin-bottom: 2rem;
+	h1 {
+		color: white;
+		font-weight: 400;
+		text-align: center;
+	}
+}
+.social-icons {
+	@include flex(space-evenly, center, row);
+}
+
+.footer-info {
+	flex: 1 1 40rem;
+	li {
+		color: rgb(210, 210, 210);
+	}
+}
+
+.footer-action {
+	flex: 1 1 40rem;
+}

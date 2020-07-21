@@ -1,6 +1,7 @@
 .main-head {
 	margin: 0 0 0 auto;
 	box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.1);
+	min-height: 10vh;
 }
 
 nav {
@@ -36,8 +37,6 @@ nav {
 		transition: all 250ms;
 		&:hover {
 			color: $color;
-			font-size: 2.3rem;
-			font-size-adjust: 2rem;
 		}
 	}
 }
@@ -61,12 +60,14 @@ nav {
 // HERO SECITON
 
 .hero {
-	background: linear-gradient(rgba(255, 255, 255, 0.495), transparent),
-		url('../img/Hero\ BG.png');
+	// background: linear-gradient(rgba(255, 255, 255, 0.3), transparent),
+	// 	url('../img/Hero\ BG.png');
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
-	min-height: 30vh;
+	min-height: 50vh;
+	position: relative;
+	overflow: hidden;
 }
 .hero-wrapper {
 	width: 90%;
@@ -98,6 +99,14 @@ nav {
 		font-size: 2rem;
 		font-weight: 900;
 	}
+}
+
+#bamboo-grid {
+	position: absolute;
+	z-index: -1;
+	top: -10rem;
+	left: 0;
+	opacity: 1;
 }
 
 #Plant {

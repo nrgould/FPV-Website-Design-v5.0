@@ -1,0 +1,7 @@
+<svg id="Green_Triangle" data-name="Green Triangle" xmlns="http://www.w3.org/2000/svg" width="80.323" height="74.268" viewBox="0 0 80.323 74.268">
+  <path id="Polygon_3" data-name="Polygon 3" d="M29,0,58,50H0Z" transform="matrix(0.914, 0.407, -0.407, 0.914, 20.337, 5)" fill="#5cd786"/>
+  <g id="Polygon_4" data-name="Polygon 4" transform="matrix(0.914, 0.407, -0.407, 0.914, 27.337, 0)" fill="none">
+    <path d="M29,0,58,50H0Z" stroke="none"/>
+    <path d="M 29 5.979442596435547 L 5.208076477050781 47 L 52.79192352294922 47 L 29 5.979442596435547 M 29 0 L 58 50 L 0 50 L 29 0 Z" stroke="none"/>
+  </g>
+</svg>
