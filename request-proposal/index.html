@@ -26,22 +26,43 @@
 	<body>
 		<header class="main-head">
 			<nav>
-				<div class="logo">
+				<div id="logo">
 					<a href="../index.html">
 						<img
-							class="logo-image"
-							src="/img/FPV Bamboo Logo.png"
-							alt="bamboo logo"
+						class="logo-image"
+						src="/img/FPV Bamboo Logo.png"
+						alt="bamboo logo"
 						/>
-						<h1 class="logo-text">Focus Point Visuals</h1>
+						<!-- <h1 class="logo-text">Focus Point Visuals</h1> -->
 					</a>
 				</div>
-				<!-- <ul class="nav-links">
-					<li><a href="../">Home</a></li>
-					<li><a href="#">Services</a></li>
-					<li><a href="#">Case Studies</a></li>
-					<li><a href="#">About</a></li>
-				</ul> -->
+				<div class="social-icons">
+						<a href="https://www.facebook.com/FPVisuals/" target="_blank">
+							<img
+								class="footer-icon"
+								src="./img/social-logos/iconmonstr-facebook-1.svg"
+								alt="Facebook"
+							/>
+						</a>
+						<a href="https://www.instagram.com/focuspointvisuals/" target="_blank">
+							<img
+								src="./img/social-logos/iconmonstr-instagram-11.svg"
+								alt="Instagram"
+							/>
+						</a>
+						<a href="https://www.linkedin.com/organization-guest/company/focus-point-visuals" target="_blank">
+							<img
+								src="./img/social-logos/iconmonstr-linkedin-3.svg"
+								alt="LinkedIn"
+							/>
+						</a>
+						<a href="https://twitter.com/focuspointvis" target="_blank">
+							<img
+								src="./img/social-logos/iconmonstr-twitter-1.svg"
+								alt="Twitter"
+							/>
+						<a>
+					</div>
 			</nav>
 		</header>
 		<section class="form-hero">
@@ -275,7 +296,7 @@
 					Complete the form and we’ll get back to you within 24 hours to
 					schedule your complementary consultation
 				</h4>
-				<form action="">
+				<form name="request-proposal" method="POST" data-netlify="true">
 					<div class="form-columns">
 						<div class="form-col-1">
 							<label for="name">Name</label>
