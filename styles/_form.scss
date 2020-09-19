@@ -3,7 +3,7 @@
 }
 
 .form-hero-wrapper {
-	width: 90%;
+	width: 80%;
 	margin: auto;
 	@include flex(space-evenly, center, row);
 	flex-wrap: wrap;
@@ -19,14 +19,14 @@
 		}
 	}
 	h2 {
-		font-size: 5.5rem;
+		font-size: 4rem;
 		margin-bottom: 2rem;
 	}
 	h3 {
-		font-size: 3.4rem;
+		font-size: 2.5rem;
 		margin-bottom: 4rem;
-		color: $grey-text;
-		font-weight: 500;
+		color: $text;
+		font-weight: 600;
 	}
 	a {
 		font-size: 2rem;
@@ -34,16 +34,57 @@
 	}
 }
 
+//request a proposal
+
 .form-wrapper {
-	form {
-		@include flex(center, center, column);
-		checkbox {
-			text-align: left;
-		}
+	@include shadow();
+	padding: 4rem;
+	margin-bottom: 5rem;
+	border: 1px solid #dbdbdb;
+	border-radius: 6px;
+}
+
+.form {
+	width: 80%;
+	margin: auto;
+	margin-top: 8rem;
+}
+
+.form-columns {
+	@include flex(center, center, row);
+	flex-wrap: wrap;
+}
+
+.form-col-1,
+.form-col-2 {
+	@include flex(center, center, column);
+	flex: 1 1 20rem;
+}
+
+.form-col-1 input {
+	margin-bottom: 3rem;
+}
+
+input,
+textarea {
+	padding: 0.5rem 2rem;
+	border: 1px solid #dbdbdb;
+	margin-bottom: 2rem;
+	border-radius: 4px;
+	@include shadow();
+}
+label {
+	font-size: 2rem;
+	font-weight: 500;
+	text-align: left;
+}
+
+form {
+	@include flex(center, center, column);
+	checkbox {
+		text-align: left;
 	}
 	button {
-		background: $color;
-		padding: 2rem 6rem;
-		border: none;
+		text-align: center;
 	}
 }

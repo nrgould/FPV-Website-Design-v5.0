@@ -9,24 +9,24 @@ html {
 }
 
 @font-face {
-	font-family: 'Montserrat';
-	src: url('/fonts/Montserrat/Montserrat-Medium.ttf');
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat/Montserrat-Medium.ttf");
 }
 @font-face {
-	font-family: 'Montserrat Bold';
-	src: url('/fonts/Montserrat/Montserrat-Bold.ttf');
+	font-family: "Montserrat Bold";
+	src: url("/fonts/Montserrat/Montserrat-Bold.ttf");
 }
 @font-face {
-	font-family: 'DIN Pro';
-	src: url('/fonts/dinpro-cufonfonts/DINPro-Medium\ tr.ttf');
+	font-family: "DIN Pro";
+	src: url("/fonts/dinpro-cufonfonts/DINPro-Medium\ tr.ttf");
 }
 @font-face {
-	font-family: 'DIN Pro Bold';
-	src: url('/fonts/dinpro-cufonfonts/DINPro-Bold\ tr.ttf');
+	font-family: "DIN Pro Bold";
+	src: url("/fonts/dinpro-cufonfonts/DINPro-Bold\ tr.ttf");
 }
 @font-face {
-	font-family: 'SF Pro Rounded';
-	src: url('/fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf');
+	font-family: "SF Pro Rounded";
+	src: url("/fonts/FontsFree-Net-SF-Pro-Rounded-Regular.ttf");
 }
 
 li,
@@ -36,29 +36,33 @@ p,
 input,
 label {
 	font-size: $text;
-	font-family: 'SF Pro Rounded', sans-serif;
+	font-family: "Roboto", sans-serif;
+	font-weight: 400;
 	line-height: 3.2rem;
 }
 
 h1 {
 	font-size: $header1;
-	font-family: 'Montserrat Bold', sans-serif;
+	font-family: "Montserrat Bold", sans-serif;
 }
 h2 {
 	font-size: $header2;
-	font-family: 'Montserrat Bold', sans-serif;
+	font-family: "Montserrat Bold", sans-serif;
 }
 h3 {
 	font-size: $header3;
-	font-family: 'DIN Pro Bold', sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
 }
 h4 {
 	font-size: $header4;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
 }
 h5 {
 	font-size: $header5;
-	font-family: 'Montserrat', sans-serif;
+	font-family: "Poppins", sans-serif;
+	font-weight: 600;
 }
 ul {
 	list-style: none;
@@ -68,14 +72,16 @@ a {
 	color: $grey-text;
 }
 
-.btn-cta {
-	padding: 2rem 4rem;
+.btn-cta,
+button {
+	padding: 1.6rem 3rem;
 	background: $color;
 	color: white;
-	border-radius: 1rem;
+	border-radius: 0.4rem;
 	box-shadow: 0 10px 20px rgba($color: #21deba, $alpha: 0.4);
 	animation: button 0.8s ease-in-out infinite alternate 2s;
-	font-weight: 600;
+	font-weight: 500;
+	border: none;
 	@include expand();
 }
 
@@ -86,7 +92,7 @@ a {
 	border-radius: 1rem;
 	box-shadow: 0 20px 40px rgba($color: #21deba, $alpha: 0.4);
 	animation: button 0.8s ease-in-out infinite alternate 2s;
-	font-weight: 600;
+	font-weight: 500;
 	@include expand();
 }
 

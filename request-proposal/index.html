@@ -7,34 +7,48 @@
 			Focus Point Visuals | Digital Marketing for Community Colleges
 		</title>
 		<link rel="stylesheet" href="../styles/style.css" />
-		<link rel="shortcut icon" href="./Favicon.png" type="image/x-icon" />
+		<link rel="shortcut icon" href="../Favicon.png" type="image/x-icon" />
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script
+			async
+			src="https://www.googletagmanager.com/gtag/js?id=UA-150849215-1"
+		></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag("js", new Date());
+
+			gtag("config", "UA-150849215-1");
+		</script>
 	</head>
 	<body>
 		<header class="main-head">
 			<nav>
 				<div class="logo">
-					<img
-						class="logo-image"
-						src="/img/FPV Bamboo Logo.png"
-						alt="bamboo logo"
-					/>
-					<h1 class="logo-text">Focus Point Visuals</h1>
+					<a href="../index.html">
+						<img
+							class="logo-image"
+							src="/img/FPV Bamboo Logo.png"
+							alt="bamboo logo"
+						/>
+						<h1 class="logo-text">Focus Point Visuals</h1>
+					</a>
 				</div>
-				<ul class="nav-links">
+				<!-- <ul class="nav-links">
 					<li><a href="../">Home</a></li>
 					<li><a href="#">Services</a></li>
 					<li><a href="#">Case Studies</a></li>
 					<li><a href="#">About</a></li>
-				</ul>
+				</ul> -->
 			</nav>
 		</header>
 		<section class="form-hero">
 			<div class="form-hero-wrapper">
 				<div class="hero-text">
 					<h2>Request a proposal</h2>
-					<h3>
-						It only takes a few seconds.
-					</h3>
+					<h3>It only takes a few seconds.</h3>
 				</div>
 				<div class="hero-image">
 					<svg
@@ -257,37 +271,60 @@
 		</section>
 		<section class="form">
 			<div class="form-wrapper">
-				<h3>
+				<h4 style="text-align: center; margin-bottom: 2rem">
 					Complete the form and we’ll get back to you within 24 hours to
 					schedule your complementary consultation
-				</h3>
+				</h4>
 				<form action="">
-					<label for="name">Name</label>
-					<input type="text" name="name" id="name" required />
-					<label for="email">Professional Email</label>
-					<input type="email" name="email" id="email" required />
-					<label for="institution">Institution Name</label>
-					<input type="text" name="institution" id="institution" required />
-					<label for="website">Website</label>
-					<input type="text" name="website" id="website" required />
-					<label for="services"
-						>What services are you looking for? Select all that apply.</label
-					>
-					<label for="service1">Facebook Ads / Social Media</label>
-					<input
-						type="checkbox"
-						id="service1"
-						name="service1"
-						value="facebook"
-					/>
-					<label for="service2">Google Ads / PPC</label>
-					<input type="checkbox" id="service2" name="service2" value="google" />
-					<label for="service3"
-						>Conversion Rate Optimization / Landing Page Design</label
-					>
-					<input type="checkbox" id="service3" name="service3" value="cro" />
-					<label for="message">Additional Project Details (optional)</label>
-					<textarea name="message" id="message" cols="30" rows="10"></textarea>
+					<div class="form-columns">
+						<div class="form-col-1">
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" required />
+							<label for="email">Email</label>
+							<input type="email" name="email" id="email" required />
+							<label for="website">Website</label>
+							<input type="text" name="website" id="website" required />
+						</div>
+						<div class="form-col-2">
+							<!-- <label for="services"
+								>What services are you looking for? Select all that
+								apply.</label
+							>
+							<label for="service1">Facebook Ads / Social Media</label>
+							<input
+								type="checkbox"
+								id="service1"
+								name="service1"
+								value="facebook"
+							/>
+							<label for="service2">Google Ads / PPC</label>
+							<input
+								type="checkbox"
+								id="service2"
+								name="service2"
+								value="google"
+							/>
+							<label for="service3"
+								>Conversion Rate Optimization / Landing Page Design</label
+							>
+							<input
+								type="checkbox"
+								id="service3"
+								name="service3"
+								value="cro"
+							/> -->
+							<label style="text-align: center" for="message"
+								>Additional Project Details (optional)</label
+							>
+							<textarea
+								name="message"
+								id="message"
+								cols="30"
+								rows="10"
+							></textarea>
+						</div>
+					</div>
+					<div class="break"></div>
 					<button type="submit">Request My Proposal</button>
 				</form>
 			</div>

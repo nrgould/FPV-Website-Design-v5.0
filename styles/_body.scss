@@ -119,68 +119,27 @@
 	line-height: 3.2rem;
 	p,
 	li {
-		font-weight: 500;
+		font-weight: 400;
 	}
 }
-.card-fb {
+
+.services-card {
 	@include flex(center, center, column);
+	flex: 1;
 	width: 40rem;
+	margin: 0 2rem;
 	padding: 6rem 4.4rem;
 	text-align: center;
 	border-radius: 6px;
 	border: 1px solid #dbdbdb;
 	background: white;
 	img {
-		width: 7rem;
-		margin-bottom: 4rem;
+		max-width: 6rem;
+		margin-bottom: 3rem;
 	}
 	p,
 	li {
-		margin: 3.8rem 2rem;
-		list-style-type: disc;
-		text-align: left;
-	}
-	margin-bottom: 8rem;
-	@include shadow();
-	@include expand();
-}
-.card-google {
-	@include flex(center, center, column);
-	width: 40rem;
-	padding: 6rem 4.4rem;
-	text-align: center;
-	border-radius: 6px;
-	border: 1px solid #dbdbdb;
-	background: white;
-	img {
-		width: 7rem;
-		margin-bottom: 4rem;
-	}
-	p,
-	li {
-		margin: 3.8rem 2rem;
-		list-style-type: disc;
-		text-align: left;
-	}
-	margin-bottom: 8rem;
-	@include shadow();
-	@include expand();
-}
-.card-cro {
-	@include flex(center, center, column);
-	width: 40rem;
-	padding: 6rem 4.4rem;
-	text-align: center;
-	border-radius: 6px;
-	border: 1px solid #dbdbdb;
-	background: white;
-	img {
-		width: 9rem;
-		margin-bottom: 2.5rem;
-	}
-	p,
-	li {
-		margin: 3.8rem 2rem;
+		margin: 2rem;
 		list-style-type: disc;
 		text-align: left;
 	}
@@ -374,15 +333,58 @@
 // BOTTOM CTA
 
 .bottom-cta {
-	background: url('../img/bottom-cta-bg.png');
+	background: url("../img/bottom-cta-bg.png");
 	background-repeat: none;
 	background-size: cover;
-	@include flex(space-around, center, row);
-	flex-wrap: wrap;
-	padding: 4rem 6rem;
+	padding: 2rem 4rem;
+}
+
+.bottom-cta-content {
+	@include flex(center, center, row);
+	h2 {
+		font-size: 3rem;
+		margin-right: 2rem;
+	}
 }
 
 .ml3 {
 	font-weight: 900;
 	font-size: 3.5em;
+}
+
+//testimonial
+
+.testimonial {
+	margin-top: 10rem;
+}
+
+.testimonial-wrapper {
+	@include flex(center, center, row);
+	flex-wrap: wrap;
+	width: 80%;
+	margin: auto;
+	padding: 8rem 0;
+}
+.testimonial-text {
+	flex: 2 1 40rem;
+	@include flex(center, center, column);
+
+	h4 {
+		@include expand();
+		line-height: 5rem;
+		text-align: center;
+		margin-bottom: 3rem;
+		max-width: 70%;
+	}
+	h5 {
+		text-align: center;
+	}
+}
+
+.testimonial-text span {
+	color: #1c9bdb;
+}
+
+.testimonial-text span:nth-child(2) {
+	color: rgb(102, 33, 222);
 }

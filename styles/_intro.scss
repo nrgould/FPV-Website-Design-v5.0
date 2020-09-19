@@ -1,29 +1,37 @@
 .main-head {
 	margin: 0 0 0 auto;
 	box-shadow: 0 10px 10px rgba($color: #000000, $alpha: 0.1);
-	min-height: 10vh;
+	min-height: 4vh;
 }
 
 nav {
-	@include flex(space-between, center, row);
+	display: grid;
+	grid-template-columns: repeat(10, 1fr);
+	// @include flex(space-around, center, row);
+	// min-height: 5vh;
 	width: 95%;
 	margin: auto;
 	flex-wrap: wrap;
 }
 
-.logo {
+#logo a {
+	grid-column: 5/8;
 	@include flex(flex-start, center, row);
-	flex: 1 1 20rem;
+	// flex: 1 1 20rem;
 	.logo-image {
-		width: 6rem;
+		width: 3.6rem;
 		@include expand();
 	}
-	.logo-text {
-		font-family: 'Montserrat', sans-serif;
-		color: $grey-text;
-		margin: 2rem;
-	}
-	margin: 2rem;
+
+	margin: 1rem;
+}
+
+.logo-text {
+	font-family: "Montserrat", sans-serif;
+	font-size: 2rem;
+	font-weight: 800;
+	color: $grey-text;
+	margin: 0 2rem;
 }
 
 .nav-links {
@@ -42,7 +50,7 @@ nav {
 }
 
 #nav-btn-cta {
-	padding: 1.2rem 2.4rem;
+	padding: 1rem 2rem;
 	background: $color;
 	color: #ffffff;
 	a {
@@ -57,6 +65,14 @@ nav {
 	}
 }
 
+.social-icons {
+	grid-column: 9/11;
+	// flex: 1 1 20rem;
+	@include flex(space-around, center, row);
+	img {
+		margin: 0 0.75rem;
+	}
+}
 // HERO SECITON
 
 .hero {
@@ -75,6 +91,7 @@ nav {
 	@include flex(space-evenly, center, row);
 	flex-wrap: wrap;
 	.hero-text {
+		margin: 4rem 0;
 		flex: 3 1 30rem;
 		@include flex(space-around, flex-start, column);
 	}
@@ -88,16 +105,19 @@ nav {
 	h2 {
 		font-size: 5.5rem;
 		margin-bottom: 2rem;
+		line-height: 5.5rem;
+		color: black;
 	}
 	h3 {
 		font-size: 3.4rem;
 		margin-bottom: 4rem;
-		color: $grey-text;
-		font-weight: 500;
+		color: $text;
+		font-weight: 600;
+		line-height: 4rem;
 	}
 	a {
 		font-size: 2rem;
-		font-weight: 900;
+		font-weight: 600;
 	}
 }
 

@@ -19,45 +19,45 @@
 
 // testimonial
 
-.testimonial {
-	background: #101c2e;
-	margin-top: 10rem;
-}
+// .testimonial {
+// 	background: #101c2e;
+// 	margin-top: 10rem;
+// }
 
-.testimonial-wrapper {
-	@include flex(center, center, row);
-	flex-wrap: wrap;
-	width: 80%;
-	margin: auto;
-	padding: 8rem 0;
-}
-.testimonial-text {
-	flex: 2 1 40rem;
-	@include expand();
-	h4 {
-		line-height: 5rem;
-		text-align: center;
-		color: white;
-	}
-}
-.testimonial-profile {
-	flex: 1 1 40rem;
-	@include flex(center, center, column);
-	@include expand();
-	img {
-		width: 15rem;
-		height: 15rem;
-		object-fit: cover;
-		border-radius: 50%;
-		margin-bottom: 3rem;
-	}
-	h5 {
-		text-align: center;
-		color: white;
-		line-height: 3.2rem;
-		font-size: 1.6rem;
-	}
-}
+// .testimonial-wrapper {
+// 	@include flex(center, center, row);
+// 	flex-wrap: wrap;
+// 	width: 80%;
+// 	margin: auto;
+// 	padding: 8rem 0;
+// }
+// .testimonial-text {
+// 	flex: 2 1 40rem;
+// 	@include expand();
+// 	h4 {
+// 		line-height: 5rem;
+// 		text-align: center;
+// 		color: white;
+// 	}
+// }
+// .testimonial-profile {
+// 	flex: 1 1 40rem;
+// 	@include flex(center, center, column);
+// 	@include expand();
+// 	img {
+// 		width: 15rem;
+// 		height: 15rem;
+// 		object-fit: cover;
+// 		border-radius: 50%;
+// 		margin-bottom: 3rem;
+// 	}
+// 	h5 {
+// 		text-align: center;
+// 		color: white;
+// 		line-height: 3.2rem;
+// 		font-size: 1.6rem;
+// 	}
+// }
 
 // what we do
 

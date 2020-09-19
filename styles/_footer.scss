@@ -24,9 +24,6 @@ footer {
 		text-align: center;
 	}
 }
-.social-icons {
-	@include flex(space-evenly, center, row);
-}
 
 .footer-info {
 	flex: 1 1 40rem;
