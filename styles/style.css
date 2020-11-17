@@ -86,10 +86,11 @@ a {
 
 .btn-cta,
 button {
-  padding: 1.6rem 3rem;
+  padding: 1rem 2rem;
   background: #21deba;
   color: white;
-  border-radius: 0.4rem;
+  border-radius: 0.8rem;
+  font-size: 1.5rem;
   -webkit-box-shadow: 0 10px 20px rgba(33, 222, 186, 0.4);
           box-shadow: 0 10px 20px rgba(33, 222, 186, 0.4);
   -webkit-animation: button 0.8s ease-in-out infinite alternate 2s;
@@ -350,23 +351,18 @@ nav {
 }
 
 .hero-wrapper h2 {
-  font-size: 5.5rem;
-  margin-bottom: 2rem;
-  line-height: 5.5rem;
+  font-size: 5rem;
+  margin-bottom: 3rem;
+  line-height: 6rem;
   color: black;
 }
 
 .hero-wrapper h3 {
-  font-size: 3.4rem;
+  font-size: 2.6rem;
   margin-bottom: 4rem;
   color: 1.8rem;
   font-weight: 600;
   line-height: 4rem;
-}
-
-.hero-wrapper a {
-  font-size: 2rem;
-  font-weight: 600;
 }
 
 #bamboo-grid {
@@ -1244,6 +1240,10 @@ nav {
   margin-bottom: 5rem;
   border: 1px solid #dbdbdb;
   border-radius: 6px;
+}
+
+.form-title {
+  margin: 5rem auto;
 }
 
 .form {
